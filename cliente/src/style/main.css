@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Raleway SemiBold;
+}
+
+@font-face {
+    font-family: Raleway SemiBold;
+    src: url('./font/Raleway-SemiBold.ttf')
+}
+
+body {
+    background-color: black;
+}
+
+
+.root {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.root .navbar {
+    float: left;
+    height: 50px;
+    background-color: rgba(32, 23, 23, 0.3);
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    z-index: 999;
+}
+
+@media (max-width:700px){
+
+    .root .navbar {
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+.navbar .logo h1 {
+    color: white;
+    width: 200px;
+    margin-left: 10%;
+    font-size: 13pt;
+}
+
+
+
+.root .hero {
+    float: left;
+    height: 100vh;
+    width:100%;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('/img/hero.JPG');
+    background-size: cover;
+    background-position: center top;
+    max-width: 100%;
+    top: 0;
+   
+}
+
+.hero .title_hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 80vh;
+}
+
+@media (max-width:800px){
+
+    .title_hero p {
+        margin-top: 3%;
+        font-size: 10pt;
+        width: 70%;
+        text-align: center;
+    }
+    
+}
+
+.title_hero h1 {
+    font-size: 36pt;
+}
+
+.title_hero p {
+    margin-top: 4%;
+}
+
+.title_hero .btn_hero {
+    padding: 15px;
+    border:hidden;
+    color:white;
+    background-color: rgb(121, 25, 185);
+    margin-top: 5%;
+    font-size: 10pt;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.title_hero .btn_hero:hover {
+    background-color: rgb(158, 45, 45);
+}
+
+.horario {
+    margin-top:-1.9%;
+}
+
+.hero .horario ul {
+    display:flex;
+    padding: 3%;
+    flex-direction: row;
+    width: 60%;
+    height: 100px;
+    background-color: black;
+    color: white;
+}
+
+@media (max-width:800px){
+
+    .hero .horario {
+        display: flex;
+        justify-content: center;
+    }
+    .hero .horario ul {
+        display: grid;
+        grid-template-columns: auto;
+        padding: 0;
+        margin-left: 10%;
+    }
+
+    
+
+
+}
+
+
+.horario ul li img {
+    width: 20px;
+    height: 20px;
+}
+
+.horario li {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: black;
+}
+
+.horario li span {
+    font-size: 11pt;
+    padding-left: 10px;
+}
+
+.horario p {
+    padding-top: 6px;
+    font-size: 10pt;
+    padding-left: 30px;
+    color: gray;
+    width: 200px;
+    height: 100px;
+}
+
+.overlay {
+    background-color: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 9999;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+.title_sucess {
+    color:white;
+    background-color: green;
+    width: 200px;
+    padding: 10px;
+    font-size: 11pt;
+    border-radius: 10px;
+}
+
+.overlay form  {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.overlay form div h1 {
+    color:white;
+    font-size: 11pt;
+    margin-top: 10px;
+    padding-bottom: 5px;
+}
+
+.overlay form input  {
+    width: 290px;
+    padding-left: 5px;
+    height: 30px;
+    border-radius: 5px;
+    border:hidden;
+}
+
+@media (max-width:700px){
+    .overlay form input {
+        width: 220px;
+    }
+}
+
+.title_rs {
+    font-size: 13pt;
+    color: white;
+}
+
+.btn_rs {
+    width: 140px;
+    padding: 10px;
+    border:hidden;
+    color:white;
+    background-color: rgb(121, 25, 185);
+    margin-top: 5%;
+    font-size: 10pt;
+    border-radius: 30px;
+    transition: 0.5s;
+}

@@ -1,0 +1,103 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+.navbar {
+    float: left;
+    height: 50px;
+    background-color: rgb(8, 123, 255);
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 999;
+    color: white;
+}
+
+.navbar h1 {
+    font-size: 15pt;
+    margin-left: 2%;
+}
+
+.res {
+    width: 100%;
+}
+
+
+.enc .tableHead{
+    width: 100%;
+    height: 40px;
+    border-collapse: collapse;
+    border-bottom: 1px solid #808080;
+}
+
+.tableHead tr th {
+   font-family: Raleway-Bold;
+   font-size: 11pt; 
+   float: left;
+    width: 100px;
+    height: 30px;
+    padding-top: 10px;
+}
+
+.tableHead tr th:nth-child(5), .tableData tr td:nth-child(5) {
+   width: 340px;
+   text-align: center;
+}
+
+
+
+.tableData {
+    margin-top: -1px;
+    float: left;
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+.tableData tr {
+   border-collapse: collapse;
+   border-top:1px solid #a7a3a3;
+   height: 40px;   
+   transition: 0.5s;
+}
+
+.tableData tr button {
+    float: right;
+    margin-right: 5%;
+    margin-top:10px;
+    font-size: 13pt;
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+    border: hidden;
+    width: 20px;
+    height: 20px;
+}
+
+.tableData tr:nth-child(even) {
+   background-color: #f6f5f8;
+}
+
+.tableData tr td {
+   float: left;
+   height: 25px;
+   padding-top: 10px;
+   width: 100px;
+   font-size: 10pt;
+   text-align: center;
+   font-family: Raleway-semibold;
+  
+}
+
+
+
+
+
+
+
+.tableData tr:hover {
+    background: rgba(207, 204, 204, 0.3);
+}
