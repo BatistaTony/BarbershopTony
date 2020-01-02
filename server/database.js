@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 
 
-
+//class
 class Database {
     constructor(){
         this._connect()
